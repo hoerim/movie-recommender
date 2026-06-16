@@ -36,6 +36,7 @@ if st.button("추천받기"):
     st.subheader("추천 결과")
 
     for movie in movies:
+        st.image(movie["poster"], width=200)
 
         st.write(f"🎥 {movie['title']}")
         st.write(f"⭐ {movie['rating']}")
