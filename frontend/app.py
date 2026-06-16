@@ -23,7 +23,7 @@ rating = st.slider(
 if st.button("추천받기"):
 
     response = requests.post(
-        "http://localhost:8000/recommend",
+        "http://backend:8000/recommend",
         json={
             "genre": genre,
             "mood": mood,
