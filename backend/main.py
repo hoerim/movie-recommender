@@ -14,7 +14,7 @@ def recommend(pref: UserPreference):
         score = 0
 
         if movie["genre"] == pref.genre:
-            score += 1
+            score += 3
 
         if movie["mood"] == pref.mood:
             score += 1
